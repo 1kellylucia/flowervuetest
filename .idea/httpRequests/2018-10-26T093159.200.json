@@ -1,0 +1,8 @@
+{
+  "message": "success",
+  "purchaser": {
+    "_id": "5bd379bfcfd5e52356590266",
+    "funds": 1200,
+    "__v": 0
+  }
+}

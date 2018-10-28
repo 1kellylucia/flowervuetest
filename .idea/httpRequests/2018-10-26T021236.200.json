@@ -1,0 +1,18 @@
+[
+  {
+    "uplikes": 0,
+    "_id": "5bd2052d60247b19f8e3ff60",
+    "flowertype": "sakura",
+    "amount": 300,
+    "prize": 0.5,
+    "__v": 0
+  },
+  {
+    "uplikes": 0,
+    "_id": "5bd2f4d0ef9e561c87f4a92b",
+    "flowers": "sakura",
+    "amount": 10,
+    "prize": 1,
+    "__v": 0
+  }
+]
