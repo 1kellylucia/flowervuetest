@@ -28,6 +28,13 @@ describe('GET /flowers', function ()  {
     });
 
 });
-
-
+describe('GET /flowers/:flower_', function () {
+    it('should return a single flower', function (done) {
+        request(app)
+            .get('/flowers/rose')
+            .set('Accept', 'application/json')
+            .expect('Content-Type', /json/)
+            .expect(200, done);
+    });
+});
 });
