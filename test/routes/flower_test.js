@@ -50,6 +50,20 @@ describe('GET /flowers/0/more',function(){
         });
     });
 });
+describe('POST /flowers', function () {
+
+    it('should return confirmation message and update flowerstore', function (done) {       
+         request(app)
+         .post('/flowers')
+         .set('Accept', 'application/json')
+         .send(flower)
+         .end(function(err, res) {
+             expect(res).to.have.status(200);
+             expect(res.body).to.have.property('message').equal('success',flower ); 
+             done();
+  });
+ });
+});
 
 
 });
