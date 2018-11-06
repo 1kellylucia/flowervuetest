@@ -36,4 +36,39 @@ describe('orders', function () {
                     
             });
         });
+        describe('POST /order', function () {
+            let order = { 
+                id: 100003 , 
+                amount: 200, 
+                o_flowers: 'magnolia'
+           };
+            it('should return confirmation message and update ', function (done) {       
+                 request(app)
+                 .post('/order')
+                 .set('Accept', 'application/json')
+                 .send(order)
+                 .end(function(err, res) {
+                     if(!err){
+                     expect(res).to.have.status(200);
+                     expect(res.body).to.have.property('message').equal('success',order ); 
+                     done();
+                     }
+                     else{
+                        expect(res.body).to.have.property('message').equal('this order NOT Added!',err );
+                     }
+          });
+          after(function  (done) {
+            chai.request(server)
+                .get('/order')
+                .end(function(err, res) {
+                    let result = _.map(res.body, (order) => {
+                        return { o_flowers: order.o_flowers, 
+                           id: order.id };
+                    }  );
+                    expect(result).to.include( { o_flowers:'magnolia' ,id:100003} );
+                    done();
+                });
+        }); 
+        });
+     });
     });
