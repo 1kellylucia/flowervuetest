@@ -18,4 +18,22 @@ describe('orders', function () {
                     .expect(200,done);
             });    
         });
+        describe('GET /order/:id', function () {
+            it('should return a single order', function (done) {
+                request(app)
+                    .get('/order/100003')
+                    .set('Accept', 'application/json')
+                    .expect('Content-Type', /json/)
+                    .end(function(err, res) {
+                        expect(res).to.have.status(200);
+                        let result = _.map(res.body, (order) => {
+                            return { id: order.id,
+                                flower: order.o_flowers } 
+                            });
+                        expect(result).to.include( { id: 100003,flower:'magnolia'  } );
+                        done();
+             });
+                    
+            });
+        });
     });
