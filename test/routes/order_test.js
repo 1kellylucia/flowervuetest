@@ -71,4 +71,26 @@ describe('orders', function () {
         }); 
         });
      });
+     describe('DELETE /order/:id',function(){
+        it('should delete order successfully ',function(done){
+            request(app)
+            .delete('/order/100003')
+            .set('Accept','application/json')
+            .end(function(err,res){
+                expect(res).to.have.status(200);
+                expect(res.body).to.have.property('message').equal('order Deleted!');
+                done();
+                });
+        });
+        it('should return an error if the id cannot be found',function(done){
+            request(app)
+            .delete('/order/111WW')
+            .set('Accept','application/json')
+            .end(function(err,res){
+                expect(res).to.have.status(200);
+                expect(res.body).to.have.property('message').equal('order NOT Deleted!');
+                done();
+            });
+        });
+    });
     });
