@@ -37,4 +37,19 @@ describe('GET /flowers/:flower_', function () {
             .expect(200, done);
     });
 });
+describe('GET /flowers/0/more',function(){
+    it('should return an aggregation after looking up other tables', function(done){
+        request(app)
+        .get('/flowers/0/more')
+        .set('Accept', 'application/json')
+        .send(flower)
+        .end(function(err, res) {
+            expect(res).to.have.status(200);
+            expect(res.body).to.have.property('message').equal('success',flower); 
+            done();
+        });
+    });
+});
+
+
 });
