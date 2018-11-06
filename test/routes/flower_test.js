@@ -16,15 +16,18 @@ describe('flowers', function () {
         prize: 1, 
         uplikes: 1
        }
-       describe('GET /flowers', function ()  {
-        it('should return all the flowers in an array', function (done) {
-            request(app)
-                .get('/flowers')
-                .set('Accept','application/json')
-                .expect('Content-Type',/json/)          
-                .expect(200,done);
-                
-        });
-    
+  
+describe('GET /flowers', function ()  {
+    it('should return all the flowers in an array', function (done) {
+        request(app)
+            .get('/flowers')
+            .set('Accept','application/json')
+            .expect('Content-Type',/json/)          
+            .expect(200,done);
+            
     });
+
+});
+
+
 });
