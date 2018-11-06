@@ -41,4 +41,21 @@ describe('purchaser', function () {
   });
 });
 });
+describe('GET /purchaser/:PurchaserName', function () {
+    it('should return a single order', function (done) {
+        request(app)
+            .get('/purchaser/mike')
+            .set('Accept', 'application/json')
+            .expect('Content-Type', /json/)
+            .end(function(err, res) {
+                expect(res).to.have.status(200);
+                let result = _.map(res.body, (purchaser) => {
+                    return { funds: purchaser.funds,
+                        flower: purchaser.P_flowers } 
+                    });
+                expect(result).to.include( { funds: 1000,flower:'rose'  } );
+                done();
+            });
+     });
+});
 });
