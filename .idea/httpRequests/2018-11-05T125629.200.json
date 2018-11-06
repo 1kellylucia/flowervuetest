@@ -1,0 +1,26 @@
+[
+  {
+    "uplikes": 0,
+    "_id": "5bddda23452cd138ac77a484",
+    "flower_": "rose",
+    "amount": 500,
+    "prize": 1,
+    "__v": 0
+  },
+  {
+    "uplikes": 0,
+    "_id": "5bdddabad58f7138c023ba82",
+    "flower_": "rose",
+    "amount": 500,
+    "prize": 1,
+    "__v": 0
+  },
+  {
+    "uplikes": 0,
+    "_id": "5be00da1b41f553ae29242cb",
+    "flower_": "rose",
+    "amount": 500,
+    "prize": 1,
+    "__v": 0
+  }
+]

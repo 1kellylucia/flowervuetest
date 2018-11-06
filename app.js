@@ -21,12 +21,12 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 //manageorders
 app.get('/order',manageorders.findAll);
-app.get('/order:id',manageorders.findOne);
+app.get('/order/:id',manageorders.findOne);
 app.post('/order',manageorders.addOrder);
 app.delete('/order/:id',manageorders.deleteOrder);
 //purchasers
 app.get('/purchaser',purchasers.findAll);
-app.get('/purchaser/:id',purchasers.findOne);
+app.get('/purchaser/:PurchaserName',purchasers.findOne);
 app.post('/purchaser',purchasers.addPurchaser);
 app.delete('/purchaser/:id',purchasers.deletePurchaser);
 //flowers
@@ -35,8 +35,8 @@ app.get('/flowers/0/more', flowers.findMore);
 
 app.get('/flowers/:flower_', flowers.findByName);
 app.post('/flowers',flowers.addFlower);
-app.put('/flowers/:id/amount', flowers.incrementUplikes);
-app.delete('/flowers/:id', flowers.deleteFlower);
+app.put('/flowers/:_id/amount', flowers.incrementUplikes);
+app.delete('/flowers/:_id', flowers.deleteFlower);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

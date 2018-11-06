@@ -1,5 +1,5 @@
 let Order = require('../models/orders');
-let Flowers = require('../models/flowers');
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -27,8 +27,8 @@ router.findAll = (req, res) => {
 };
 router.findOne = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
-    Order.find({"_id": req.params._id},function(err,Order) {
-        if (err != null)
+    Order.find({"id": req.params.id},function(err,Order) {
+        if (!err)
             res.send(JSON.stringify(Order, null, 5));
         else
             res.send('This order is NOT Found!!');
@@ -56,6 +56,7 @@ function removelikes(flowers,amount){
 router.addOrder = (req, res) => {
     res.setHeader('Content-Type','application/json');
     let order = new Order();
+    order.id = req.body.id;
     order.o_flowers = req.body.o_flowers;
     order.OrderAmount = req.body.OrderAmount;
 
@@ -70,11 +71,12 @@ router.addOrder = (req, res) => {
     });
 };
 router.deleteOrder = (req, res) => {
-    Flowers.findByIdAndRemove(req.params.id, function(err) {
-        if (err)
-            res.send({ message: 'order NOT Deleted!' } );
-        else
-            res.json({ message: 'order Deleted!'});
+    res.setHeader('Content-Type','application/json');
+    Order.findOneAndRemove({"id":req.params.id}, function(err) {
+       if (err)
+           res.json({ message: 'order NOT Deleted!' } );
+       else
+          res.json({ message: 'order Deleted!'});
     });
 
 };

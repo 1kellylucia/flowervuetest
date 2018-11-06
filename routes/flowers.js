@@ -31,7 +31,7 @@ router.findByName = (req,res) => {
         ]
     };
     let count = 0;
-    Flowers.count(_filter,function (err,doc) {
+    Flowers.countDocuments(_filter,function (err,doc) {
         if(err){
             res.send({message: 'FLOWER NOT founded!'});
         }else{
@@ -43,14 +43,14 @@ router.findByName = (req,res) => {
         if (err) {
             res.send({message: 'FLOWER NOT founded!'});
         } else {
-            res.send(JSON.stringify(flowers, null, 5));
+            res.send(flowers);
         }
     });
 };
-/*outer.findOne = (req, res) => {
+router.findOne = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
 
-    Flowers.find({"_id": req.params.id},function(err,flowers) {
+    Flowers.find({"_id": req.params._id},function(err,flowers) {
 
 
         if (err)
@@ -58,7 +58,7 @@ router.findByName = (req,res) => {
         else
             res.send(JSON.stringify(flowers, null, 5));
     });
-};*/
+};
 
 router.addFlower = (req, res) => {
     //Add a new donation to our list
@@ -77,7 +77,7 @@ router.addFlower = (req, res) => {
     });
 };
 router.incrementUplikes = (req, res) => {
-    Flowers.findById(req.params.id, function(err,flower) {
+    Flowers.findById(req.params._id, function(err,flower) {
         if (err)
             res.json({ message: 'flower NOT Found!', errmsg : err } );
         else {
@@ -92,7 +92,7 @@ router.incrementUplikes = (req, res) => {
     });
 };
 router.deleteFlower = (req, res) => {
-    Flowers.findByIdAndRemove(req.params.id, function(err) {
+    Flowers.findByIdAndRemove(req.params._id, function(err) {
         if (err)
             res.send({ message: 'flowers NOT DELETED!' } );
         else
@@ -124,7 +124,8 @@ router.findMore = (req, res) => {
         if (err) {
             res.send({message: 'flower NOT founded!'});
         } else {
-            res.send(JSON.stringify(flower, null, 5));
+            var F2={message:'success',flower};
+            res.send(JSON.stringify(F2, null, 5));
         }
     });
 };

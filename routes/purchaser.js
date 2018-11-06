@@ -25,7 +25,7 @@ router.findAll = (req, res) => {
 
 router.findOne = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
-    Purchaser.find({"_id": req.params._id},function(err,purchasers) {
+    Purchaser.find({"PurchaserName": req.params.PurchaserName},function(err,purchasers) {
         if (err)
             res.send('This purchaser is NOT Found!!');
         else
@@ -69,7 +69,7 @@ router.addPurchaser = (req, res) => {
 };*/
 
 router.deletePurchaser = (req, res) => {
-    Purchaser.findByIdAndRemove(req.params.id, function(err) {
+    Purchaser.findOneAndRemove({"PurchaserName":req.params.PurchaserName}, function(err) {
         if (err)
             res.send({ message: 'Purchaser NOT DELETED!' } );
         else
