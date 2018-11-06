@@ -58,4 +58,16 @@ describe('GET /purchaser/:PurchaserName', function () {
             });
      });
 });
+describe('DELETE /purchaser/:PurchaserName',function(){
+    it('should delete purchaser successfully ',function(done){
+        request(app)
+        .delete('/purchaser/mike')
+        .set('Accept','application/json')
+        .end(function(err,res){
+            expect(res).to.have.status(200);
+            expect(res.body).to.have.property('message').equal('Purchaser Successfully Deleted!');
+            done();
+            });
+    });
+});
 });
