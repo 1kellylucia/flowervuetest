@@ -95,5 +95,55 @@ describe('PUT /flowers/:_id/amount',function(){
      });
  });
 });
+/*after(function(){
+     request(app)
+     .get('/flowers/5bd35607191d8f226383b929')
+     .set('Accept','application/json')
+     .end(function(err, res) {
+         let result = _.map(res.body, function(flower) {
+             likes = flower.uplikes;
+             return likes;
+                
+         });
+         expect(result).to.include( 1 );
+         done();
+     });
+ });*/
+});
+describe('DELETE /flowers/:_id',function(){
+ it('should delete flower successfully ',function(done){
+     request(app)
+     .delete('/flowers/5be0b7dd735acf4126f477a1')
+     .set('Accept','application/json')
+     .end(function(err,res){
+         expect(res).to.have.status(200);
+         expect(res.body).to.have.property('message').equal('flowers Successfully Deleted!');
+         done();
+         });
+ });
+ it('should return an error if the id cannot be found',function(done){
+     request(app)
+     .delete('/flowers/AAA')
+     .set('Accept','application/json')
+     .end(function(err,res){
+         expect(res).to.have.status(200);
+         expect(res.body).to.have.property('message').equal('flowers NOT DELETED!');
+         done();
+     });
+ });
+ after(function(){
+     request(app)
+     .get('/flowers/5be0b7dd735acf4126f477a1')
+     .set('Accept','application/json')
+     .end(function(err, res) {
+         let result = _.map(res.body, function(flower) {
+             return flowers;  
+         });
+         expect(result).to.equal(null);
+         done();
+     });
+ });
+
+
 
 });
