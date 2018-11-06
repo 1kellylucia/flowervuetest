@@ -64,6 +64,36 @@ describe('POST /flowers', function () {
   });
  });
 });
+describe('PUT /flowers/:_id/amount',function(){
+ it('should return not found',function(done){
+     request(app)
+     .put('/flowers/11/amount')
+     .set('Accept','application/json')
+     .end(function(err,res){
+         expect(res).to.have.status(200);
+         expect(res.body).to.have.property('message').equal('flower NOT Found!', err);
+         done();
+     });
 
+ });
+ it('should return flower Successfully UpLiked or not ',function(done){
+     request(app)
+     .put('/flowers/5bd35607191d8f226383b929/amount')
+     .set('Accept','application/json')
+     .end(function(err,res){
+         if(err){
+             expect(res).to.have.status(200);
+             expect(res.body).to.have.property('message').equal('flower NOT UpLiked!', err);
+         done();
+         }
+         else{
+         expect(res).to.have.status(200);
+                 let flower = res.body.data;
+                 expect(flower).to.include({flower_: "sakura"});
+                 done();
+         }
+     });
+ });
+});
 
 });
