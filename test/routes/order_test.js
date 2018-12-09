@@ -9,7 +9,7 @@ const app = require('../../app');
 describe('orders', function () {
      
         
-           describe('GET /order', function ()  {
+        describe('GET /order', function ()  {
             it('should return all the orders in an array', function (done) {
                 request(app)
                     .get('/order')

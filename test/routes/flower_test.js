@@ -1,30 +1,35 @@
 let chai = require('chai');
 let chaiHttp = require('chai-http');
+let server = require('../../bin/www');
 let expect = chai.expect;
 chai.use(chaiHttp);
 let _ = require('lodash' );
-
 const request = require('supertest');
 const app = require('../../app');
 describe('flowers', function () {
-    beforeEach(function(){  
+    var app = null;
+    before(function(){
         console.log('start');
+        delete require.cache[require.resolve('../../app')];
+        app = require('../../app');
+
     });
+
     let flower = {
-        flower_: 'rose', 
-        amount: 500, 
-        prize: 1, 
+        flower_: 'rose',
+        amount: 500,
+        prize: 1,
         uplikes: 1
-       }
-  
+    }
+
 describe('GET /flowers', function ()  {
     it('should return all the flowers in an array', function (done) {
         request(app)
             .get('/flowers')
             .set('Accept','application/json')
-            .expect('Content-Type',/json/)          
+            .expect('Content-Type',/json/)
             .expect(200,done);
-            
+
     });
 
 });
@@ -45,21 +50,21 @@ describe('GET /flowers/0/more',function(){
         .send(flower)
         .end(function(err, res) {
             expect(res).to.have.status(200);
-            expect(res.body).to.have.property('message').equal('success',flower); 
+            expect(res.body).to.have.property('message').equal('success',flower);
             done();
         });
     });
 });
 describe('POST /flowers', function () {
 
-    it('should return confirmation message and update flowerstore', function (done) {       
+    it('should return confirmation message and update flowerstore', function (done) {
          request(app)
          .post('/flowers')
          .set('Accept', 'application/json')
          .send(flower)
          .end(function(err, res) {
              expect(res).to.have.status(200);
-             expect(res.body).to.have.property('message').equal('success',flower ); 
+             expect(res.body).to.have.property('message').equal('success',flower );
              done();
   });
  });
@@ -103,7 +108,7 @@ describe('PUT /flowers/:_id/amount',function(){
          let result = _.map(res.body, function(flower) {
              likes = flower.uplikes;
              return likes;
-                
+
          });
          expect(result).to.include( 1 );
          done();
@@ -137,7 +142,7 @@ describe('DELETE /flowers/:_id',function(){
      .set('Accept','application/json')
      .end(function(err, res) {
          let result = _.map(res.body, function(flower) {
-             return flowers;  
+             return flowers;
          });
          expect(result).to.equal(null);
          done();

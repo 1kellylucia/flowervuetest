@@ -6,7 +6,7 @@
     },
     "plugins": [
         "json"
-    ], 
+    ],
     "extends": "eslint:recommended",
     "rules": {
         "indent": [
