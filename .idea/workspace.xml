@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f64e8cb3-9c18-4ea5-abc0-6e754fbc0d34" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -113,16 +114,16 @@
         <counts>
           <entry key="gitignore" value="4" />
           <entry key="js" value="395" />
-          <entry key="json" value="92" />
-          <entry key="yml" value="36" />
+          <entry key="json" value="109" />
+          <entry key="yml" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="92" />
+          <entry key="JSON" value="109" />
           <entry key="JavaScript" value="395" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="YAML" value="36" />
+          <entry key="YAML" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -147,11 +148,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+            <state relative-caret-position="77">
+              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -165,7 +166,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
@@ -272,8 +273,8 @@
         <option value="$PROJECT_DIR$/routes/flowers.js" />
         <option value="$PROJECT_DIR$/test/routes/flower_test.js" />
         <option value="$PROJECT_DIR$/.eslintrc.json" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -300,8 +301,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="599" />
-    <option name="y" value="33" />
+    <option name="x" value="199" />
+    <option name="y" value="23" />
     <option name="width" value="981" />
     <option name="height" value="724" />
   </component>
@@ -1702,12 +1703,12 @@
       <workItem from="1543530244549" duration="3536000" />
       <workItem from="1543672888546" duration="10892000" />
       <workItem from="1544196799496" duration="18464000" />
-      <workItem from="1544358313460" duration="1240000" />
+      <workItem from="1544358313460" duration="1536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118652000" />
+    <option name="totallyTimeSpent" value="118948000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1719,7 +1720,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="599" y="33" width="981" height="724" extended-state="0" />
+    <frame x="199" y="23" width="981" height="724" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4972973" visible="true" weight="0.18125" />
@@ -1954,13 +1955,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.eslintrc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -2021,6 +2015,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
         </state>
       </provider>
     </entry>
