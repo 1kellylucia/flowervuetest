@@ -8,7 +8,7 @@
     "clean": "rimraf ./dist && mkdir dist",
     "prebuild": "npm run clean",
     "coverage": "cross-env NODE_ENV=test PORT=4000 nyc mocha test/routes/flower_test.js",
-    "build": "cross-env NODE_ENV=production webpack"
+    "build": "babel ./ --out-dir lib/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./test --copy-files"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
