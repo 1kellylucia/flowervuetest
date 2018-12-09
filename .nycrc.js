@@ -1,0 +1,21 @@
+{
+    "include";
+    [
+        "routes/**/*.js",
+        "models/**/*.js",
+        "app.js"
+    ],
+        "require";
+    [
+        "babel-register"
+    ],
+        "reporter";
+    [
+        "lcov",
+        "text-summary"
+    ],
+        "sourceMap";
+    false,
+        "instrument";
+    false;
+}

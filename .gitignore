@@ -57,3 +57,4 @@ typings/
 # dotenv environment variables file
 .env
 /libgit add package.json git add package.json git
+/coverage
