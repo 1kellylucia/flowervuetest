@@ -2,14 +2,3 @@ dist: trusty
 language: node_js
 node_js:
 - stable
-script:
-- npm run coverage
-branches:
-  only: development
-notifications:
-  email:
-    recipients:
-    - 20082474@mail.wit.ie      # change to your own address
-    - 530606349@qq.com    # uae other (optional)
-    on_success: never        # default: change
-    on_failure: always       # default: always
