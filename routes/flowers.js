@@ -20,7 +20,21 @@ router.findAll = (req, res) => {
         res.send(JSON.stringify(flowers,null,5));
     });
 };
-
+let findById = (arr, id) => {
+    let result  = arr.filter(function(o) { return o.id === id;} );
+    return result ? result[0] : null; // or undefined
+}
+router.editFlower = (req, res) => {
+    let flower =  findById(Flowers, req.params._id ) ;
+    if (!flower)
+        res.json({ message: 'Flower NOT Found!'} );
+    else {
+        flower.flower_ = req.body.flower_;
+        flower.amount = req.body.amount;
+        flower.prize = req.body.prize;
+        res.json({ message: 'Flower Successfully UpDated!', data: flower });
+    }
+};
 
 router.findByName = (req,res) => {
     res.setHeader('Content-Type', 'application/json');
