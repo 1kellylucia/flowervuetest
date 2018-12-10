@@ -1,0 +1,42 @@
+[
+  {
+    "uplikes": 0,
+    "_id": "5c0ee472129fee08c0dad80d",
+    "flower_": "star",
+    "amount": 999,
+    "prize": 2,
+    "__v": 0
+  },
+  {
+    "uplikes": 0,
+    "_id": "5c0ee473129fee08c0dad80e",
+    "flower_": "sakura",
+    "amount": 100,
+    "prize": 1,
+    "__v": 0
+  },
+  {
+    "uplikes": 0,
+    "_id": "5c0ee473129fee08c0dad80f",
+    "flower_": "rose",
+    "amount": 200,
+    "prize": 3,
+    "__v": 0
+  },
+  {
+    "uplikes": 0,
+    "_id": "5c0ee473129fee08c0dad810",
+    "flower_": "star",
+    "amount": 300,
+    "prize": 2,
+    "__v": 0
+  },
+  {
+    "uplikes": 0,
+    "_id": "5c0ee93fae5d48128ca35ce5",
+    "flower_": "rose",
+    "amount": 500,
+    "prize": 1,
+    "__v": 0
+  }
+]

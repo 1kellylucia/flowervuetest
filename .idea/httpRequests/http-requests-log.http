@@ -1,3 +1,47 @@
+GET http://localhost:3000/flowers/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"_id": "5c0ee472129fee08c0dad80d", "flower_": "rose", "amount": 999, "prize": 2}
+
+<> 2018-12-10T104736.200.json
+
+###
+
+PUT http://localhost:3000/flowers/5c0ee472129fee08c0dad80d
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"_id": "5c0ee472129fee08c0dad80d", "flower_": "rose", "amount": 999, "prize": 2}
+
+<> 2018-12-10T104718.200.json
+
+###
+
+PUT http://localhost:3000/flowers/5c0ee472129fee08c0dad80d
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"_id": "5c0ee472129fee08c0dad80d", "flower_": "rose", "amount": 999, "prize": 2}
+
+<> 2018-12-10T103404.500.html
+
+###
+
+GET http://localhost:3000/flowers
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "id":100001,"o_flowers":"rose","OrderAmount":100}
+
+<> 2018-12-10T103136.200.json
+
+###
+
 GET http://localhost:3000/order/100001
 Accept: */*
 Cache-Control: no-cache
@@ -497,50 +541,6 @@ Content-Type: application/json
 {   "PurchaseName": "xue feng" , "p_flowers":"rose",   "funds":1200 }
 
 <> 2018-11-05T125629.200.json
-
-###
-
-DELETE http://localhost:3000/flowers/5bddf0c68a49e0390ecc24b2
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{   "PurchaseName": "xue feng" , "p_flowers":"rose",   "funds":1200 }
-
-<> 2018-11-05T125618.200.json
-
-###
-
-GET http://localhost:3000/flowers
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{   "PurchaseName": "xue feng" , "p_flowers":"rose",   "funds":1200 }
-
-<> 2018-11-05T125530.200.json
-
-###
-
-PUT http://localhost:3000/flowers/5bd363bd6b0830228e029332/amount
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{   "PurchaseName": "xue feng" , "p_flowers":"rose",   "funds":1200 }
-
-<> 2018-11-05T125521.200.json
-
-###
-
-GET http://localhost:3000/flowers/sakura
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{   "PurchaseName": "xue feng" , "p_flowers":"rose",   "funds":1200 }
-
-<> 2018-11-05T125415.200.json
 
 ###
 
