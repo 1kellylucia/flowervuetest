@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "test:watch": "npm run test -- --watch",
     "test": "cross-env NODE_ENV=test mocha --require babel-core/register test/routes/flower_test.js",
-    "server:watch": "cross-env NODE_ENV=dev nodemon --exec babel-node bin/www",
     "clean": "rimraf ./lib && mkdir lib",
     "postbuild": "npm run server",
     "prebuild": "npm-run-all test clean",
+    "server": "cross-env NODE_ENV=dev PORT=3001 node lib/bin/www",
+    "start": "npm-run-all test build server",
     "coverage": "cross-env NODE_ENV=test PORT=4000 nyc mocha test/routes/flower_test.js",
     "build": "babel ./ --out-dir lib/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./test --copy-files"
   },
@@ -24,7 +24,8 @@
     "mongod": "^2.0.0",
     "mongodb": "^3.1.8",
     "mongoose": "^5.3.6",
-    "morgan": "~1.9.0"
+    "morgan": "~1.9.0",
+    "really-need": "^1.9.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
