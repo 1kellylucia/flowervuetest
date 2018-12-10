@@ -58,3 +58,4 @@ typings/
 .env
 /libgit add package.json git add package.json git
 /coverage
+/lib

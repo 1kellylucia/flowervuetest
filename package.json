@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "test:watch": "npm run test -- --watch",
     "test": "cross-env NODE_ENV=test mocha --require babel-core/register test/routes/flower_test.js",
-    "server": "NODE_ENV=dev && node bin/www",
+    "server:watch": "cross-env NODE_ENV=dev nodemon --exec babel-node bin/www",
     "clean": "rimraf ./lib && mkdir lib",
-    "prebuild": "npm run clean",
+    "postbuild": "npm run server",
+    "prebuild": "npm-run-all test clean",
     "coverage": "cross-env NODE_ENV=test PORT=4000 nyc mocha test/routes/flower_test.js",
     "build": "babel ./ --out-dir lib/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./test --copy-files"
   },
