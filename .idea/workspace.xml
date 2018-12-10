@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f64e8cb3-9c18-4ea5-abc0-6e754fbc0d34" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -118,7 +119,7 @@
           <entry key="gitignore" value="14" />
           <entry key="js" value="448" />
           <entry key="json" value="126" />
-          <entry key="yml" value="42" />
+          <entry key="yml" value="97" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -126,7 +127,7 @@
           <entry key="JSON" value="127" />
           <entry key="JavaScript" value="448" />
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="YAML" value="42" />
+          <entry key="YAML" value="97" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -206,8 +207,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            <state relative-caret-position="105">
+              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -313,7 +314,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="512" />
+    <option name="x" value="316" />
     <option name="y" value="23" />
     <option name="width" value="981" />
     <option name="height" value="724" />
@@ -1710,12 +1711,12 @@
       <workItem from="1544395482356" duration="101000" />
       <workItem from="1544396045735" duration="80000" />
       <workItem from="1544400232906" duration="1293000" />
-      <workItem from="1544439608266" duration="6856000" />
+      <workItem from="1544439608266" duration="7101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130395000" />
+    <option name="totallyTimeSpent" value="130640000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1727,10 +1728,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="512" y="23" width="981" height="724" extended-state="0" />
+    <frame x="316" y="23" width="981" height="724" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4972973" visible="true" weight="0.18125" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4972973" visible="true" weight="0.18125" />
       <window_info id="Structure" order="1" sideWeight="0.5027027" side_tool="true" weight="0.38199514" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -1744,7 +1745,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32954547" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32954547" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32852563" />
       <window_info anchor="bottom" id="REST Client" order="12" weight="0.50974023" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -2050,8 +2051,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        <state relative-caret-position="105">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
         </state>
       </provider>
     </entry>
