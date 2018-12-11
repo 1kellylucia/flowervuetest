@@ -7,7 +7,8 @@
     "server": "NODE_ENV=dev && node bin/www",
     "clean": "rimraf ./dist && mkdir dist",
     "prebuild": "npm run clean",
-    "build": "cross-env NODE_ENV=production webpack"
+    "build": "cross-env NODE_ENV=production webpack",
+    "start": " npm-run-all test build server"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
