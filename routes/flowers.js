@@ -21,6 +21,21 @@ router.findAll = (req, res) => {
     });
 };
 
+router.editFlower = (req, res) => {
+    res.setHeader('Content-Type','application/json');
+    Flowers.findById(req.params._id, function(err,flower) {
+        if (err)
+            res.send(err);
+        flower.flower_ = req.body.flower_;
+        flower.prize = req.body.prize;
+        flower.amount = req.body.amount;
+        flower.save(function(err){
+            if(err)
+                res.send(err);
+            res.json({message:'flower updated!'});
+        })
+    });
+};
 
 router.findByName = (req,res) => {
     res.setHeader('Content-Type', 'application/json');
@@ -64,6 +79,7 @@ router.addFlower = (req, res) => {
     //Add a new donation to our list
     res.setHeader('Content-Type','application/json');
     let flower = new Flowers();
+    flower._id =req.body._id;
     flower.flower_ = req.body.flower_;
     flower.amount = req.body.amount;
     flower.prize = req.body.prize;

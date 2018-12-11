@@ -1,55 +1,33 @@
-# Flowerstore
-# Flowerstore
+# Assignment 2 - Web API - Automated development process.
+
+Name: Flowerstore
+
+## Overview.
+
+a kind of flower online shop .
+
+## API endpoints.
+
+
+ + GET /flowers - Get all flowers
+ + GET /flowers/0/more - Get all info in three tables.
+ + GET /flowers/:_id - Get one flower by id
+ + GET /flowers/1/:flower_ - Get one flower by name
+ + POST /flowers - ADD new one
+ + PUT /flowers/:_id/amount - update likes
+ + DELETE /flowers/:_id - delete flowers
+
+
+## Continuous Integration and Test results.
+
+
+https://travis-ci.org/1kellylucia/flowervuetest
 
 
 
-
-# flower store
-
-a kind of flower online shop with orders.
-
-## Getting Started
-
-planning for the details of the db and tables this project needs and the relationships among these.
-For example, the flowername in flowers can connect to the flowername in orders and purchaser,which means that the orders requirement flowers and the flowers purchaser wants.
+https://coveralls.io/github/1kellylucia/flowervuetest
 
 
-### Prerequisites
+## Extra features.
 
-install webstorm as IDE, install mongodb and node.js etc.
-
-### Installing
-
-firstly,setting up a new project
-
-adding the necessary preference in node.js
-
-write the basic function 
-
-write the test file
-
-testing file
-
-
-## Running the tests
-set the port : 3000
-run  bin/www 
-url(https://youtu.be/VF5rJ7yzoE4)
-a video for the details
-
-
-## Built With
-
-* [mongodb](http://www.mongodb.com/) - 
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [webstorm]( https://www.jetbrains.com/webstorm/) - Used for IDE
-
-
-## Reference
-
-
-ddrohan(https://ddrohan.github.io/wit-wad-2-2018/)
-天驱丶(https://www.jianshu.com/p/f7f531c9e676)
-
-
-github address: https://github.com/1kellylucia/Flowerstore
+supertest...
