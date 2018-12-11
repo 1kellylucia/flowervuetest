@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f64e8cb3-9c18-4ea5-abc0-6e754fbc0d34" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/models/flowers.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/flowers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lib/models/flowers.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lib/models/flowers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lib/routes/flowers.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lib/routes/flowers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/flowers.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/flowers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/routes/flower_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/routes/flower_test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -116,13 +116,13 @@
         <counts>
           <entry key="gitignore" value="4" />
           <entry key="js" value="462" />
-          <entry key="json" value="98" />
+          <entry key="json" value="99" />
           <entry key="yml" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="98" />
+          <entry key="JSON" value="99" />
           <entry key="JavaScript" value="462" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="YAML" value="36" />
@@ -131,7 +131,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="babelrc" value="1" />
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="js" value="17" />
           <entry key="json" value="7" />
           <entry key="md" value="1" />
@@ -144,7 +144,7 @@
           <entry key="JSON" value="8" />
           <entry key="JavaScript" value="19" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -152,11 +152,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="9" column="129" selection-start-line="9" selection-start-column="129" selection-end-line="9" selection-end-column="129" />
+            <state relative-caret-position="99">
+              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -202,7 +202,7 @@
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="183">
-              <caret line="40" column="50" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="40" selection-end-column="50" />
+              <caret line="40" column="50" selection-start-line="34" selection-start-column="4" selection-end-line="40" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -212,6 +212,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-87">
               <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -230,15 +239,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="12">
               <caret line="97" column="58" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/chai/lib/chai/utils/addChainableMethod.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="83" column="48" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -273,7 +273,6 @@
         <option value="$PROJECT_DIR$/routes/manageOrders.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/.babelrc" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/nodemon.json" />
         <option value="$PROJECT_DIR$/.eslintrc.js" />
         <option value="$PROJECT_DIR$/test/routes/order_test.js" />
@@ -283,6 +282,7 @@
         <option value="$PROJECT_DIR$/models/flowers.js" />
         <option value="$PROJECT_DIR$/test/routes/flower_test.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1708,7 +1708,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123949000" />
+    <option name="totallyTimeSpent" value="124314000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1729,15 +1729,15 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49583334" weight="0.40097404" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49479166" weight="0.40097404" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49895832" weight="0.32467532" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.225" side_tool="true" weight="0.52272725" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.775" visible="true" weight="0.52272725" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.22604166" side_tool="true" weight="0.52272725" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.7739583" visible="true" weight="0.52272725" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32852563" />
       <window_info anchor="bottom" id="REST Client" order="12" weight="0.50974023" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1763,9 +1763,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/error.ejs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1897,13 +1894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/routes/purchaser_test.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -2007,7 +1997,7 @@
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
-          <caret line="40" column="50" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="40" selection-end-column="50" />
+          <caret line="40" column="50" selection-start-line="34" selection-start-column="4" selection-end-line="40" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -2042,8 +2032,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="9" column="129" selection-start-line="9" selection-start-column="129" selection-end-line="9" selection-end-column="129" />
+        <state relative-caret-position="99">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/chai/lib/chai/utils/addChainableMethod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="83" column="48" selection-start-line="83" selection-start-column="48" selection-end-line="83" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
         </state>
       </provider>
     </entry>
