@@ -94,8 +94,9 @@ router.addFlower = (req, res) => {
 };
 router.incrementUplikes = (req, res) => {
     Flowers.findById(req.params._id, function(err,flower) {
-        if (err)
-            res.json({ message: 'flower NOT Found!', errmsg : err } );
+        if (err) {
+            res.json({message: 'flower NOT Found!', errmsg: err});
+        }
         else {
             flower.uplikes += 1;
             flower.save(function (err) {

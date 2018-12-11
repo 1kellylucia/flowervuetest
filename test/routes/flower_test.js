@@ -16,6 +16,7 @@ describe('flowers', function () {
     });
 
     let flower = {
+        _id:200001,
         flower_: 'rose',
         amount: 500,
         prize: 1,
@@ -72,7 +73,7 @@ describe('POST /flowers', function () {
 describe('PUT /flowers/:_id/amount',function(){
  it('should return not found',function(done){
      request(app)
-     .put('/flowers/11/amount')
+     .put('/flowers/1asfsfdghfhg/amount')
      .set('Accept','application/json')
      .end(function(err,res){
          expect(res).to.have.status(200);
@@ -83,7 +84,7 @@ describe('PUT /flowers/:_id/amount',function(){
  });
  it('should return flower Successfully UpLiked or not ',function(done){
      request(app)
-     .put('/flowers/5bd35607191d8f226383b929/amount')
+     .put('/flowers/200001/amount')
      .set('Accept','application/json')
      .end(function(err,res){
          if(err){
@@ -94,7 +95,7 @@ describe('PUT /flowers/:_id/amount',function(){
          else{
          expect(res).to.have.status(200);
                  let flower = res.body.data;
-                 expect(flower).to.include({flower_: "sakura"});
+                 expect(flower).to.include({flower_: "rose"});
                  done();
          }
      });
@@ -118,7 +119,7 @@ describe('PUT /flowers/:_id/amount',function(){
 describe('DELETE /flowers/:_id',function(){
  it('should delete flower successfully ',function(done){
      request(app)
-     .delete('/flowers/5be0b7dd735acf4126f477a1')
+     .delete('/flowers/200001')
      .set('Accept','application/json')
      .end(function(err,res){
          expect(res).to.have.status(200);
