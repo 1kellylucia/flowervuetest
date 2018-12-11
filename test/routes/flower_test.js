@@ -10,12 +10,12 @@ describe('flowers', function () {
         console.log('start');
     });
     let flower = {
+        _id: 111101,
         flower_: 'rose',
         amount: 500,
         prize: 1,
         uplikes: 1
     };
-
     describe('GET /flowers', function () {
         it('should return all the flowers in an array', function (done) {
             request(app)
@@ -28,6 +28,7 @@ describe('flowers', function () {
 
     });
     describe('GET /flowers/:flower_', function () {
+
         it('should return a single flower', function (done) {
             request(app)
                 .get('/flowers/rose')
@@ -52,13 +53,14 @@ describe('flowers', function () {
     describe('POST /flowers', function () {
 
         it('should return confirmation message and update flowerstore', function (done) {
+
             request(app)
                 .post('/flowers')
                 .set('Accept', 'application/json')
                 .send(flower)
                 .end(function (err, res) {
                     expect(res).to.have.status(200);
-                    expect(res.body).to.have.property('message').equal('success', flower);
+                    expect(res.body).to.have.property('message').contains('success');
                     done();
                 });
         });
@@ -66,7 +68,7 @@ describe('flowers', function () {
     describe('PUT /flowers/:_id/amount', function () {
         it('should return not found', function (done) {
             request(app)
-                .put('/flowers/11/amount')
+                .put('/flowers/2kajhdiuhwef/amount')
                 .set('Accept', 'application/json')
                 .end(function (err, res) {
                     expect(res).to.have.status(200);
@@ -77,7 +79,7 @@ describe('flowers', function () {
         });
         it('should return flower Successfully UpLiked or not ', function (done) {
             request(app)
-                .put('/flowers/5bd35607191d8f226383b929/amount')
+                .put('/flowers/111101/amount')
                 .set('Accept', 'application/json')
                 .end(function (err, res) {
                     if (err) {
@@ -88,7 +90,7 @@ describe('flowers', function () {
                     else {
                         expect(res).to.have.status(200);
                         let flower = res.body.data;
-                        expect(flower).to.include({flower_: "sakura"});
+                        expect(flower).to.include({flower_: "rose"});
                         done();
                     }
                 });
@@ -112,7 +114,7 @@ describe('flowers', function () {
     describe('DELETE /flowers/:_id', function () {
         it('should delete flower successfully ', function (done) {
             request(app)
-                .delete('/flowers/5be0b7dd735acf4126f477a1')
+                .delete('/flowers/111101')
                 .set('Accept', 'application/json')
                 .end(function (err, res) {
                     expect(res).to.have.status(200);
@@ -122,7 +124,7 @@ describe('flowers', function () {
         });
         it('should return an error if the id cannot be found', function (done) {
             request(app)
-                .delete('/flowers/AAA')
+                .delete('/flowers/1AAAsdkfhe')
                 .set('Accept', 'application/json')
                 .end(function (err, res) {
                     expect(res).to.have.status(200);
@@ -135,7 +137,7 @@ describe('flowers', function () {
                 .get('/flowers/5be0b7dd735acf4126f477a1')
                 .set('Accept', 'application/json')
                 .end(function (err, res) {
-                    let result = _.map(res.body, function (flower) {
+                    let result = _.map(res.body, function (flowers) {
                         return flowers;
                     });
                     expect(result).to.equal(null);
