@@ -6,8 +6,9 @@
     "test": "NODE_ENV=test mocha test/routes/flower_test.js ",
     "server": "NODE_ENV=dev && node bin/www",
     "clean": "rimraf ./dist && mkdir dist",
-    "prebuild": "npm run clean",
-    "build": "cross-env NODE_ENV=production webpack",
+    "postbuild": "npm run server",
+    "prebuild": "npm-run-all test clean",
+    "build": "babel ./ --out-dir lib/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./test --copy-files",
     "start": " npm-run-all test build server"
   },
   "dependencies": {
