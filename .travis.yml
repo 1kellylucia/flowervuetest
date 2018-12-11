@@ -11,3 +11,7 @@ notifications:
     - 530606349@qq.com    # uae other (optional)
     on_success: never        # default: change
     on_failure: always       # default: always
+script:
+- npm run coverage
+after_success:
+- npm run publish-coverage
