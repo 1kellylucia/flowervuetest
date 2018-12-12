@@ -39,6 +39,7 @@ app.get('/flowers/1/:flower_', flowers.findByName);
 app.post('/flowers',flowers.addFlower);
 app.put('/flowers/:_id/amount', flowers.incrementUplikes);
 app.delete('/flowers/:_id', flowers.deleteFlower);
+app.put('flowers/:_id',flowers.editFlower);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
