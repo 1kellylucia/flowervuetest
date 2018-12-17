@@ -7,12 +7,8 @@ let _ = require('lodash' );
 const request = require('supertest');
 const app = require('../../app');
 describe('flowers', function () {
-    var app = null;
     before(function(){
         console.log('start');
-        delete require.cache[require.resolve('../../app')];
-        app = require('../../app');
-
     });
 
     let flower = {

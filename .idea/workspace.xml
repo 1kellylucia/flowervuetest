@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f64e8cb3-9c18-4ea5-abc0-6e754fbc0d34" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodemon.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/routes/flower_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/routes/flower_test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -113,7 +114,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="4" />
-          <entry key="js" value="514" />
+          <entry key="js" value="516" />
           <entry key="json" value="104" />
           <entry key="yml" value="36" />
         </counts>
@@ -121,7 +122,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="104" />
-          <entry key="JavaScript" value="514" />
+          <entry key="JavaScript" value="516" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="YAML" value="36" />
         </counts>
@@ -226,20 +227,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+            <state relative-caret-position="77">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/routes/flower_test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2037">
-              <caret line="97" column="58" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="58" />
+            <state relative-caret-position="-80">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -277,10 +278,10 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/routes/flowers.js" />
         <option value="$PROJECT_DIR$/models/flowers.js" />
-        <option value="$PROJECT_DIR$/test/routes/flower_test.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/test/routes/flower_test.js" />
       </list>
     </option>
   </component>
@@ -1726,12 +1727,12 @@
       <workItem from="1544196799496" duration="18464000" />
       <workItem from="1544358313460" duration="1240000" />
       <workItem from="1544522613946" duration="3584000" />
-      <workItem from="1544992582515" duration="1140000" />
+      <workItem from="1544992582515" duration="1909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129341000" />
+    <option name="totallyTimeSpent" value="130110000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2064,13 +2065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/routes/flower_test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2037">
-          <caret line="97" column="58" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
@@ -2080,8 +2074,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        <state relative-caret-position="77">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/routes/flower_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
         </state>
       </provider>
     </entry>
