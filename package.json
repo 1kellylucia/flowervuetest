@@ -7,17 +7,11 @@
     "server": "cross-env NODE_ENV=dev node lib/bin/www",
     "start": "npm run server",
     "clean": "rimraf ./dist && mkdir dist",
-<<<<<<< HEAD
     "postinstall": "npm run build",
     "postbuild": "npm run server",
     "prebuild": "npm-run-all test clean",
     "build": "babel ./ --out-dir lib/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./test --copy-files"
-=======
-    "postbuild": "npm run server",
-    "prebuild": "npm-run-all test clean",
-    "build": "babel ./ --out-dir lib/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./test --copy-files",
-    "start": " npm-run-all test build server"
->>>>>>> 80e0aab5fdd2436479471d1bd89731f22b4f5cc1
+
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
