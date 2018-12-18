@@ -61,7 +61,7 @@ describe('POST /flowers', function () {
          .send(flower)
          .end(function(err, res) {
              expect(res).to.have.status(200);
-             expect(res.body).to.have.property('message').equal('success',flower );
+             expect(res.body).to.have.property('message').equal('success' );
              done();
   });
  });
@@ -69,7 +69,11 @@ describe('POST /flowers', function () {
 describe('PUT /flowers/:_id/amount',function(){
  it('should return not found',function(done){
      request(app)
+<<<<<<< HEAD
      .put('/flowers/1asfsfdghfhg/amount')
+=======
+     .put('/flowers/hgfhgfjjhkh/amount')
+>>>>>>> 80e0aab5fdd2436479471d1bd89731f22b4f5cc1
      .set('Accept','application/json')
      .end(function(err,res){
          expect(res).to.have.status(200);
