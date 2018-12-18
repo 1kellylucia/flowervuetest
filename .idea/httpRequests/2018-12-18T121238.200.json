@@ -1,0 +1,11 @@
+{
+  "message": "success",
+  "flower": {
+    "uplikes": 0,
+    "_id": 100006,
+    "flower_": "rose",
+    "amount": 200,
+    "prize": 3,
+    "__v": 0
+  }
+}

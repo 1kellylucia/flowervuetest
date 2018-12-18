@@ -1,0 +1,26 @@
+[
+  {
+    "uplikes": 0,
+    "_id": 100002,
+    "flower_": "sakura",
+    "amount": 100,
+    "prize": 1,
+    "__v": 0
+  },
+  {
+    "uplikes": 0,
+    "_id": 100003,
+    "flower_": "rose",
+    "amount": 200,
+    "prize": 3,
+    "__v": 0
+  },
+  {
+    "uplikes": 0,
+    "_id": 100004,
+    "flower_": "star",
+    "amount": 300,
+    "prize": 2,
+    "__v": 0
+  }
+]

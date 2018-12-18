@@ -1,3 +1,69 @@
+POST http://localhost:3000/flowers
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "_id": 100007, "flower_": "rose", "amount": 200, "prize": 3 }
+
+<> 2018-12-18T121328.200.json
+
+###
+
+POST http://localhost:3000/flowers
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "_id": 100006, "flower_": "rose", "amount": 200, "prize": 3 }
+
+<> 2018-12-18T121309.200.json
+
+###
+
+GET http://localhost:3000/flowers
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"uplikes": 0, "_id": 100006, "flower_": "rose", "amount": 200, "prize": 3 }
+
+<> 2018-12-18T121245.200.json
+
+###
+
+POST http://localhost:3000/flowers
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"uplikes": 0, "_id": 100006, "flower_": "rose", "amount": 200, "prize": 3 }
+
+<> 2018-12-18T121238.200.json
+
+###
+
+GET http://localhost:3000/flowers
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "id":100001,"o_flowers":"rose","OrderAmount":100}
+
+<> 2018-12-18T121130.200.json
+
+###
+
+GET http://localhost:3000/flower
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{ "id":100001,"o_flowers":"rose","OrderAmount":100}
+
+<> 2018-12-18T121126.404.html
+
+###
+
 GET http://localhost:3000/order/100001
 Accept: */*
 Cache-Control: no-cache
@@ -475,72 +541,6 @@ Content-Type: application/json
 {   "PurchaseName": "xue feng" , "p_flowers":"rose",   "funds":1200 }
 
 <> 2018-11-05T095625.200.json
-
-###
-
-GET http://localhost:3000/flowers/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{   "PurchaseName": "xue feng" , "p_flowers":"rose",   "funds":1200 }
-
-<> 2018-11-05T090518.200.json
-
-###
-
-GET http://localhost:3000/flowers/rose
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{   "PurchaseName": "xue feng" , "p_flowers":"rose",   "funds":1200 }
-
-<> 2018-11-05T125629.200.json
-
-###
-
-DELETE http://localhost:3000/flowers/5bddf0c68a49e0390ecc24b2
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{   "PurchaseName": "xue feng" , "p_flowers":"rose",   "funds":1200 }
-
-<> 2018-11-05T125618.200.json
-
-###
-
-GET http://localhost:3000/flowers
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{   "PurchaseName": "xue feng" , "p_flowers":"rose",   "funds":1200 }
-
-<> 2018-11-05T125530.200.json
-
-###
-
-PUT http://localhost:3000/flowers/5bd363bd6b0830228e029332/amount
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{   "PurchaseName": "xue feng" , "p_flowers":"rose",   "funds":1200 }
-
-<> 2018-11-05T125521.200.json
-
-###
-
-GET http://localhost:3000/flowers/sakura
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{   "PurchaseName": "xue feng" , "p_flowers":"rose",   "funds":1200 }
-
-<> 2018-11-05T125415.200.json
 
 ###
 
