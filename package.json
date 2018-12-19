@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "test": "NODE_ENV=test mocha test/routes/flower_test.js ",
+    "test": "cross-env NODE_ENV=test mocha --compilers js:babel-core/register test/routes/flower_test.js",
     "server": "cross-env NODE_ENV=dev node lib/bin/www",
     "start": "npm run server",
     "clean": "rimraf ./dist && mkdir dist",
@@ -11,9 +11,9 @@
     "postbuild": "npm run server",
     "prebuild": "npm-run-all test clean",
     "build": "babel ./ --out-dir lib/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./test --copy-files"
-
   },
   "dependencies": {
+    "bcrypt": "^3.0.2",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.5",
     "debug": "~2.6.9",

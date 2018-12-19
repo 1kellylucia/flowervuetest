@@ -2,6 +2,7 @@ let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 let Purchaser = require('../models/purchaser');
+let bcrypt  = require('bcrypt');
 var mongodbUri = 'mongodb://floweradmin:flower123@ds235328.mlab.com:35328/flowerstoredb';
 mongoose.connect(mongodbUri,{ useNewUrlParser: true});
 
@@ -33,7 +34,17 @@ router.findOne = (req, res) => {
     });
 };
 
+router.testpassword = (req, res)=>{
+    res.setHeader('Content-Type','application/json');
+    bcrypt.hash(req.body.password, 10, function(err, encryptPassword) {
+        console.log("bcrypt password:"+ encryptPassword);
+        bcrypt.compare(req.body.password, encryptPassword, function(err, res) {
+            if (res === true)
+                console.log("password is true");
+        })
+    });
 
+}
 
 router.addPurchaser = (req, res) => {
     res.setHeader('Content-Type','application/json');
@@ -41,6 +52,7 @@ router.addPurchaser = (req, res) => {
     purchaser.PurchaserName= req.body.PurchaserName;
     purchaser.P_flowers = req.body.P_flowers;
     purchaser.funds = req.body.funds;
+    purchaser.password = req.body.password;
     purchaser.save(function(err)
     {
         if (err)
@@ -50,6 +62,7 @@ router.addPurchaser = (req, res) => {
         res.send(JSON.stringify(F1, null, 5));
     });
 };
+
 
 /*router.addLikes = (req, res) => {
     let likeFlower = req.body.likes;

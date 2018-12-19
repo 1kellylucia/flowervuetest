@@ -4,7 +4,8 @@ let PurchaserSchema = new mongoose.Schema({
         //id: Number,
         PurchaserName: String,
         P_flowers: String ,
-        funds: Number
+        funds: Number,
+        password: String
 
     },
     { collection: 'purchaser' });
