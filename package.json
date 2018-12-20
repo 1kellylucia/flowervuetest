@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "test": "cross-env NODE_ENV=test mocha --compilers js:babel-core/register test/routes/flower_test.js",
+    "test": "cross-env NODE_ENV=test mocha --require babel-core/register test/routes/flower_test.js",
     "server": "cross-env NODE_ENV=dev node lib/bin/www",
     "start": "npm run server",
     "publish-coverage": "nyc report --reporter=text-lcov | coveralls",

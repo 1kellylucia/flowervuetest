@@ -1,3 +1,43 @@
+POST http://localhost:3000/CheckUser/admin@123.com/123456
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-19T082323.200.json
+
+###
+
+POST http://localhost:3000/CheckUser/admin@123.com/123456
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-19T082118.404.html
+
+###
+
+POST http://localhost:3000/CheckUser/admin@123.com/123456
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-19T081806.404.html
+
+###
+
+POST http://localhost:3000/CheckUser/admin@123.com/123456
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-19T081716.404.html
+
+###
+
+POST http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-19T081628.404.html
+
+###
+
 POST http://localhost:3000/flowers
 Accept: */*
 Cache-Control: no-cache
@@ -488,59 +528,6 @@ Content-Type: application/json
 { "id":100001,"o_flowers":"rose","OrderAmount":100}
 
 <> 2018-11-06T103221.200.json
-
-###
-
-POST http://localhost:3000/orders/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "id":100001,"o_flowers":"rose","OrderAmount":100}
-
-<> 2018-11-06T103210.404.html
-
-###
-
-PUT http://localhost:3000/orders/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{ "id":100001,"o_flowers":"rose","OrderAmount":100}
-
-<> 2018-11-06T103142.404.html
-
-###
-
-GET http://localhost:3000/orders/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{   "PurchaseName": "xue feng" , "p_flowers":"rose",   "funds":1200 }
-
-###
-
-GET http://localhost:3000/flowers/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{   "PurchaseName": "xue feng" , "p_flowers":"rose",   "funds":1200 }
-
-<> 2018-11-05T101348.200.json
-
-###
-
-GET http://localhost:3000/flowers/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{   "PurchaseName": "xue feng" , "p_flowers":"rose",   "funds":1200 }
-
-<> 2018-11-05T095625.200.json
 
 ###
 

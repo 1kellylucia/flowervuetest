@@ -21,6 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use(cors());
+app.post('/CheckUser/:username/:password', usersRouter.Checkuser);
 //manageorders
 app.get('/order',manageorders.findAll);
 app.get('/order/:id',manageorders.findOne);
