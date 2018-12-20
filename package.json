@@ -3,19 +3,18 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "build": "babel ./ --out-dir lib/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./test --copy-files",
+    "start": " npm-run-all test build server",
     "test": "cross-env NODE_ENV=test mocha --require babel-core/register test/routes/flower_test.js",
-    "server": "cross-env NODE_ENV=dev node lib/bin/www",
-    "start": "npm run server",
+    "server": "NODE_ENV=dev && node bin/www",
     "publish-coverage": "nyc report --reporter=text-lcov | coveralls",
     "coverage": "cross-env NODE_ENV=test PORT=4000 nyc mocha test/routes/flower_test.js",
     "clean": "rimraf ./dist && mkdir dist",
     "postinstall": "npm run build",
     "postbuild": "npm run server",
-    "prebuild": "npm-run-all test clean",
-    "build": "babel ./ --out-dir lib/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./test --copy-files"
+    "prebuild": "npm-run-all test clean"
   },
   "dependencies": {
-    "bcrypt": "^3.0.2",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
