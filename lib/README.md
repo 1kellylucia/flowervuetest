@@ -4,7 +4,7 @@ Name: Flowerstore
 
 ## Overview.
 
-a kind of flower online shop .
+a kind of flower online shop.
 
 ## API endpoints.
 
